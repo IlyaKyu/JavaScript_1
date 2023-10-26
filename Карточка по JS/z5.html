@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Обработка строк</title>
+</head>
+<body>
+    <script>
+        // Создаем строковые переменные
+        var S1 = "Титок";
+        var S2 = "пзт-36";
+
+        // Определяем длину строки S2 в обратном порядке
+        var reversedLength = S2.split('').reverse().join('').length;
+
+        // Преобразуем строку S2 в верхний регистр
+        var upperCaseS2 = S2.toUpperCase();
+
+        // Выводим результаты на веб-страницу
+		document.write("Строка S1: " + S1+ "<br>");
+		document.write("Строка S2: " + S2+ "<br>");
+        document.write("Длина строки S2 в обратном порядке: " + reversedLength + "<br>");
+        document.write("Преобразованная строка S2 в верхнем регистре: " + upperCaseS2);
+
+    </script>
+</body>
+</html>

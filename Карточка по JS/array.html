@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Количество четных элементов</title>
+</head>
+<body>
+  <h1>Количество четных элементов</h1>
+  <button onclick="countEvenElements()">Посчитать</button>
+  <p id="result"></p>
+
+  <script>
+    function countEvenElements() {
+      var array = [1, 2, 3, 4, 5, 6, 7, 8]; // Ваш массив
+
+      var count = 0;
+      for (var i = 0; i < array.length; i++) {
+        if (array[i] % 2 === 0) {
+          count++;
+        }
+      }
+
+      document.getElementById("result").innerHTML = "Количество четных элементов: " + count;
+    }
+  </script>
+</body>
+</html>
